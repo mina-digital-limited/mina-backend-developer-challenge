@@ -1,0 +1,7 @@
+# End-of-line
+* text=auto eol=lf
+
+# Diffs
+*.cs diff=csharp
+*.htm diff=html
+*.html diff=html

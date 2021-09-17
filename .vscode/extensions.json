@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "formulahendry.dotnet-test-explorer",
+    "github.vscode-pull-request-github",
+    "ms-dotnettools.csharp"
+  ]
+}
