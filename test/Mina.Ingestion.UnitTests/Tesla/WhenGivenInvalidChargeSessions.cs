@@ -23,8 +23,8 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = null,
-                    StartTime = "2021-08-17T00:30:00Z",
-                    EndTime = "2021-08-17T04:30:00Z",
+                    StartTime = "8/17/2021,00:30",
+                    EndTime = "8/17/2021,04:30",
                     ConsumptionWh = "28000",
                 },
             };
@@ -41,8 +41,8 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "   \n   ",
-                    StartTime = "2021-08-17T00:30:00Z",
-                    EndTime = "2021-08-17T04:30:00Z",
+                    StartTime = "8/17/2021,00:30",
+                    EndTime = "8/17/2021,04:30",
                     ConsumptionWh = "28000",
                 },
             };
@@ -60,7 +60,7 @@ namespace Mina.Ingestion.UnitTests.Tesla
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
                     StartTime = null,
-                    EndTime = "2021-08-17T04:30:00Z",
+                    EndTime = "8/17/2021,04:30",
                     ConsumptionWh = "28000",
                 },
             };
@@ -78,7 +78,7 @@ namespace Mina.Ingestion.UnitTests.Tesla
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
                     StartTime = "   \n   ",
-                    EndTime = "2021-08-17T00:30:00Z",
+                    EndTime = "8/17/2021,00:30",
                     ConsumptionWh = "28000",
                 },
             };
@@ -95,7 +95,7 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T00:30:00Z",
+                    StartTime = "8/17/2021,00:30",
                     EndTime = null,
                     ConsumptionWh = "28000",
                 },
@@ -113,7 +113,7 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T00:30:00Z",
+                    StartTime = "8/17/2021,00:30",
                     EndTime = "   \n   ",
                     ConsumptionWh = "28000",
                 },
@@ -131,8 +131,8 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T00:30:00Z",
-                    EndTime = "2021-08-17T00:30:00Z",
+                    StartTime = "8/17/2021,00:30",
+                    EndTime = "8/17/2021,00:30",
                     ConsumptionWh = null,
                 },
             };
@@ -149,8 +149,8 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T00:30:00Z",
-                    EndTime = "2021-08-17T00:30:00Z",
+                    StartTime = "8/17/2021,00:30",
+                    EndTime = "8/17/2021,00:30",
                     ConsumptionWh = "   \n   ",
                 },
             };
@@ -167,8 +167,8 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T00:30:00Z",
-                    EndTime = "2021-08-17T00:30:00Z",
+                    StartTime = "8/17/2021,00:30",
+                    EndTime = "8/17/2021,00:30",
                     ConsumptionWh = "this is not a decimal",
                 },
             };

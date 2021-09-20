@@ -1,4 +1,3 @@
-using System.Linq;
 using Mina.Ingestion.Tesla;
 using Xunit;
 
@@ -17,12 +16,12 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T16:32:41Z",
-                    EndTime = "2021-08-17T20:56:04Z",
+                    StartTime = "8/17/2021,16:32",
+                    EndTime = "8/17/2021,20:56",
                     ConsumptionWh = "31543.21",
                 },
             };
-            _actual = fixture.Sut.Ingest(input).First();
+            _actual = fixture.Sut.Ingest(input)[0];
         }
 
         [Fact]

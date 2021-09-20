@@ -6,15 +6,30 @@ The purpose of this challenge is to assess your coding and problem-solving skill
 
 ## Background information
 
-Mina receives charge session data from a large number of sources and we normalise it before it is ingested. Each source provides data in a different shape and we need to ensure that essential information can be extraced:
+Mina receives charge session data from a large number of sources and we normalise it before it is ingested. Each source provides data in a different shape and we need to ensure that essential information can be extracted:
 
 -   EVSE (Electric Vehicle Supply Equipment) unique identifier
--   Start date/time of the charge session
--   End date/time of the charge session
+-   Start timestamp of the charge session
+-   End timestamp of the charge session
 -   Total consumption, either in Wh or kWh
 -   Charge session unique identifier (optional)
 
 If any of the mandatory data is missing, invalid, or violates other rules (e.g. duplicate/overalapping), the entire batch is rejected.
+
+### Timestamp conversion
+
+We can receive the timestamps for Tesla data in a variety of formats. The solution should handle each of the following formats, capturing the appropriate offsets.
+
+| Example                     | Description                                       |
+| --------------------------- | ------------------------------------------------- |
+| `8/7/2021,00:30`            | Short date in en-US culture format                |
+| `2021-08-07 00:30:00`       | ISO format in Coordinated Universal Time (UTC)    |
+| `2021-08-07 00:30:00 (GMT)` | ISO format in Greenwich Mean Time (GMT)           |
+| `2021-08-07 00:30:00 (BST)` | ISO format in British Summer Time (BST)           |
+| `2021-08-07 00:30:00 (CET)` | ISO format in Central European Time (CET)         |
+| `2021-08-07 00:30:00 (DST)` | ISO format in Central European Summer Time (CEST) |
+
+Any other timestamp formats should be rejected.
 
 ## What to do
 

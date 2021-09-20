@@ -12,7 +12,6 @@ namespace Mina.Ingestion
             string? externalId = null
         )
         {
-            Id = Guid.NewGuid();
             ExternalId = externalId;
             EvseId = evseId;
             PlugInTimestamp = plugInTimestamp;
@@ -20,7 +19,6 @@ namespace Mina.Ingestion
             KWhImported = kWhImported;
         }
 
-        public Guid Id { get; }
         public string? ExternalId { get; }
         public string EvseId { get; }
         public DateTimeOffset PlugInTimestamp { get; }

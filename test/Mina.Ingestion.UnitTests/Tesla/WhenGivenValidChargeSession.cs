@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using Mina.Ingestion.Tesla;
 using Xunit;
 
@@ -18,19 +17,12 @@ namespace Mina.Ingestion.UnitTests.Tesla
                 {
                     SessionId = "abc63ce7-b9fe-44de-a945-5296dd07dc81",
                     Description = "Private charge for 34F555D2",
-                    StartTime = "2021-08-17T16:32:41Z",
-                    EndTime = "2021-08-17T20:56:04Z",
+                    StartTime = "8/17/2021,16:32",
+                    EndTime = "8/17/2021,20:56",
                     ConsumptionWh = "31543.21",
                 },
             };
-            _actual = fixture.Sut.Ingest(input).First();
-        }
-
-        [Fact]
-        public void ShouldHaveAnId()
-        {
-            var expected = default(Guid);
-            Assert.NotEqual(expected, _actual.Id);
+            _actual = fixture.Sut.Ingest(input)[0];
         }
 
         [Fact]
@@ -50,14 +42,14 @@ namespace Mina.Ingestion.UnitTests.Tesla
         [Fact]
         public void ShouldHaveAPlugInTimestamp()
         {
-            var expected = new DateTimeOffset(2021, 08, 17, 16, 32, 41, TimeSpan.Zero);
+            var expected = new DateTimeOffset(2021, 08, 17, 16, 32, 00, TimeSpan.Zero);
             Assert.Equal(expected, _actual.PlugInTimestamp);
         }
 
         [Fact]
         public void ShouldHaveAPlugOutTimestamp()
         {
-            var expected = new DateTimeOffset(2021, 08, 17, 20, 56, 04, TimeSpan.Zero);
+            var expected = new DateTimeOffset(2021, 08, 17, 20, 56, 00, TimeSpan.Zero);
             Assert.Equal(expected, _actual.PlugOutTimestamp);
         }
 
