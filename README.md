@@ -6,26 +6,26 @@ The purpose of this challenge is to assess your coding and problem-solving skill
 
 ## Background information
 
-Mina receives charge session data from a large number of sources and we normalise it before it can be ingested. Each source provides data in a different shape and we need to ensure that essential information can be extraced:
+Mina receives charge session data from a large number of sources and we normalise it before it is ingested. Each source provides data in a different shape and we need to ensure that essential information can be extraced:
 
-- EVSE (Electric Vehicle Supply Equipment) unique identifier
-- Start date/time of the charge session
-- End date/time of the charge session
-- Total consumption, either in Wh or kWh
-- Charge session unique identifier (optional)
+-   EVSE (Electric Vehicle Supply Equipment) unique identifier
+-   Start date/time of the charge session
+-   End date/time of the charge session
+-   Total consumption, either in Wh or kWh
+-   Charge session unique identifier (optional)
 
-If any of the mandatory data is missing, invalid, or violates other rules (e.g. duplicate/overalapping), the entire ingress process is adandoned.
+If any of the mandatory data is missing, invalid, or violates other rules (e.g. duplicate/overalapping), the entire batch is rejected.
 
 ## What to do
 
 The solution contains two projects - a simple class library, and a corresponding test project.
 
-The class library contains the skeleton for a service (`TeslaChargeSessionIngestionService`) which is responsible for ingesting raw charge session data. The service is responsible for:
+The class library contains the skeleton for a service, `TeslaChargeSessionIngestionService`, which is responsible for ingesting raw charge session data. The service is responsible for:
 
-- normalising charge sessions
-- rejecting invalid charge sessions
-- rejecting duplicate charge sessions
-- rejecting overlapping charge sessions
+-   normalising charge sessions
+-   rejecting invalid charge sessions
+-   rejecting duplicate charge sessions
+-   rejecting overlapping charge sessions
 
 Your task is to implement this service.
 
@@ -33,10 +33,13 @@ To aid you, there are a number of failing unit tests in the test project. These 
 
 ## How to submit your code
 
-- Create a private fork of this repository
-- Push your working solution to your fork
-- Create a pull request from your fork to this repository, and add your hiring manager as a reviewer (bonus points for a demo video in the PR)
-- Email your hiring manager with confirmation that your PR is ready for review
+-   [Create a **private** mirror of this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository)
+-   Push your working solution to a branch on your repository
+-   Give your hiring manager read access to your repository
+-   Create a pull request, and add your hiring manager as a reviewer
+    -   Include any comments in the PR description. What would you change? Does anything feel 'off'? There are no wrong answers here!
+    -   Bonus points for a demo video in the PR
+-   Email your hiring manager with confirmation that your PR is ready for review
 
 ## Rubric
 
