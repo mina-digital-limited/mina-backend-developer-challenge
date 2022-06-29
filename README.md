@@ -50,8 +50,8 @@ To aid you, there are a number of failing unit tests in the test project. These 
 
 -   [Create a **private** mirror of this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository)
 -   Push your working solution to a branch on your repository
--   Give your hiring manager read access to your repository
--   Create a pull request and add `andrewgunn` and `elliotchaim` as reviewers
+-   Give [`andrewgunn`](https://github.com/andrewgunn) and [`elliotchaim`](https://github.com/elliotchaim) read access to your repository
+-   Create a pull request
     -   Include any comments in the PR description. What would you change? Does anything feel 'off'? There are no wrong answers here!
     -   Bonus points for a demo video in the PR
 -   Email your hiring manager with confirmation that your PR is ready for review
